@@ -6,6 +6,9 @@
     flex-wrap: wrap;
     position: relative;
     margin-bottom: 1.5em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .articleImage {
@@ -32,6 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .tag {

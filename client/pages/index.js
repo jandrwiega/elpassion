@@ -1,8 +1,54 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-import Article from './components/artice'
-import Podcast from './components/podcast'
+import ShowMorePosts from './components/showMorePosts'
+import DisplayPost from './components/displayPost'
+
+const blogPosts = [
+  {
+    type: 'article',
+    author: 'piotr żelazny',
+    publishDate: '1 godz. temu',
+    title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
+    genre: 'Hip-Hop'
+  },
+  {
+    type: 'podcast',
+    author: 'Rozmowy: Wojewódzki & Kędzierski',
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+  },
+  {
+    type: 'article',
+    author: 'piotr żelazny',
+    publishDate: '1 godz. temu',
+    title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
+    genre: 'Hip-Hop'
+  },
+  {
+    type: 'article',
+    author: 'piotr żelazny',
+    publishDate: '1 godz. temu',
+    title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
+    genre: 'Hip-Hop'
+  },
+  {
+    type: 'podcast',
+    author: 'Rozmowy: Wojewódzki & Kędzierski',
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+  },
+  {
+    type: 'article',
+    author: 'piotr żelazny',
+    publishDate: '1 godz. temu',
+    title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
+    genre: 'Hip-Hop'
+  },
+  {
+    type: 'podcast',
+    author: 'Rozmowy: Wojewódzki & Kędzierski',
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+  }
+]
 
 export default function Home() {
 
@@ -15,8 +61,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <Article />
-          <Podcast />
+          { blogPosts.map((post, i) => <DisplayPost key={i} data={post}/>) }
+          <ShowMorePosts />
       </main>
     </div>
   )

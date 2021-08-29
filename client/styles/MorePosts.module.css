@@ -1,0 +1,14 @@
+.showMoreBtn {
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9rem;
+    cursor: pointer;
+    display: block;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

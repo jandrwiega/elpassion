@@ -2,7 +2,11 @@ import styles from '../../styles/Podcast.module.css'
 import PlayArrowOutlinedIcon from '@material-ui/icons/PlayArrowOutlined';
 import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutlined';
 
-const Podcast = () => {
+const Podcast = (props) => {
+
+    const data = props.data;
+    console.log(data);
+
     return ( 
         <div className={styles.podcastWrapper}>
             <div className={styles.podcastPhoto}>
@@ -10,8 +14,8 @@ const Podcast = () => {
             </div>
 
             <div className={styles.podcastContent}>
-                <p className={styles.podcastAuthor}>sdaosakoaskdok kasdokoaskdasokok </p>
-                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                <p className={styles.podcastAuthor}>{data.author}</p>
+                <h2>{data.title}</h2>
             </div>
 
             <div className={styles.podcastSettings}>
