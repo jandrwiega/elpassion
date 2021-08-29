@@ -1,0 +1,107 @@
+.articleWrapper {
+    width: 100%;
+    height: auto; 
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.articleImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.articleContent {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.bookmarkIcon {
+    height: 52px;
+    width: 52px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    position: absolute;
+    height: 30px;
+    padding: 0 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 799px) {
+    .articlePhoto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-bottom: 2px solid black;
+    }
+    .articleContent {
+        width: 100%;
+        padding: 1.5em 1em 1em 1em;
+        align-content: flex-start;
+    }
+    .author {
+        margin-top: 1em;
+    }
+    .tag {
+        top: -15px;
+    }
+}
+@media(min-width: 800px) {
+    .articlePhoto {
+        width: 300px;
+        height: 250px;
+        border-right: 2px solid black;
+    }
+    .articleContent {
+        width: calc(100% - 300px);
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .author {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+        border-bottom: 2px solid black;
+    }
+    .header {
+        padding: 8px 16px;
+    }
+    .tag {
+        bottom: 20px;
+        left: 10px;
+    }
+}
+
+.author {
+    color: blue;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.addTime {
+    color:gray;
+    font-weight: normal;
+    font-size: .8rem;
+    margin-left: .5em;
+    text-transform: none;
+}
