@@ -5,12 +5,11 @@ import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutline
 const Podcast = (props) => {
 
     const data = props.data;
-    console.log(data);
 
     return ( 
         <div className={styles.podcastWrapper}>
             <div className={styles.podcastPhoto}>
-                <img src="https://placeimg.com/150/150/any" alt="" className={styles.podcastImage}/>
+                <img src={`http://localhost:5000/api/photos/${data.imageName}`} alt="" className={styles.podcastImage}/>
             </div>
 
             <div className={styles.podcastContent}>

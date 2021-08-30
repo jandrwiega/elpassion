@@ -10,43 +10,50 @@ const blogPosts = [
     author: 'piotr żelazny',
     publishDate: '1 godz. temu',
     title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
-    genre: 'Hip-Hop'
+    genre: 'Hip-Hop',
+    imageName: '1'
   },
   {
     type: 'podcast',
     author: 'Rozmowy: Wojewódzki & Kędzierski',
-    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik',
+    imageName: '2'
   },
   {
     type: 'article',
     author: 'piotr żelazny',
     publishDate: '1 godz. temu',
     title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
-    genre: 'Hip-Hop'
+    genre: 'Hip-Hop',
+    imageName: '3'
   },
   {
     type: 'article',
     author: 'piotr żelazny',
     publishDate: '1 godz. temu',
     title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
-    genre: 'Hip-Hop'
+    genre: 'Hip-Hop',
+    imageName: '4'
   },
   {
     type: 'podcast',
     author: 'Rozmowy: Wojewódzki & Kędzierski',
-    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik',
+    imageName: '5'
   },
   {
     type: 'article',
     author: 'piotr żelazny',
     publishDate: '1 godz. temu',
     title: `Poprzednia dekada należała do Drake'a. Jak Kanadyjczyk wpłynął na muzykę popularną?`,
-    genre: 'Hip-Hop'
+    genre: 'Hip-Hop',
+    imageName: '3'
   },
   {
     type: 'podcast',
     author: 'Rozmowy: Wojewódzki & Kędzierski',
-    title: 'Bodnar: Jakim samochodem jeździ rzecznik'
+    title: 'Bodnar: Jakim samochodem jeździ rzecznik',
+    imageName: '5'
   }
 ]
 

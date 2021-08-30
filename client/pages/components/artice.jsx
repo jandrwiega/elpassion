@@ -4,7 +4,6 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 const Article = (props) => {
 
     const data = props.data;
-    console.log(data);
 
     return ( 
         <div className={styles.articleWrapper}>
@@ -13,7 +12,7 @@ const Article = (props) => {
             </div>
 
             <div className={styles.articlePhoto}>
-                <img src="https://placeimg.com/1000/1000/any" alt="" className={styles.articleImage}/>
+                <img src={`http://localhost:5000/api/photos/${data.imageName}`} alt="" className={styles.articleImage}/>
             </div>
             <div className={styles.articleContent}>
                 <h2 className={styles.header}>{data.title}</h2>
